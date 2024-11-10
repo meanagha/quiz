@@ -43,3 +43,29 @@ Create a new quiz with a set of questions.
     }
   ]
 }
+
+
+
+**POST** `/quizzes/:quizId/questions/:questionId/submit`
+//quizzes/1/questions/1/submit
+
+Submit Answer.
+
+#### Request Body:
+
+```json
+{
+  "userId": 1,
+  "selectedOption": 1
+}
+
+
+**GET** `/quizzes/:id`
+
+Get quiz by ID
+
+
+
+**GET** `/results/:quizId/:userId`
+
+Get user results for a specific quiz
